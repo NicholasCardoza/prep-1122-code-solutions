@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      background: linear-gradient(rgb(236, 3, 3), rgb(239, 224, 58), rgb(236, 3, 3));
+
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 15%;
+      height: 60%;
+    }
+
+    h3 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Back to the Future</h1>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="https://upload.wikimedia.org/wikipedia/en/d/d2/Back_to_the_Future.jpg">
+        <h3>Back to the Future</h3>
+        <p>Marty McFly, a typical American teenager of the Eighties, is accidentally sent back to 1955 in a plutonium-powered
+        DeLorean time machine invented by a slightly mad scientist. During his often hysterical, always amazing trip back in
+        time, Marty must make certain his teenage parents-to-be meet and fall in love - so he can get back to the future.</p>
+      </div>
+      <div class="column">
+        <img src="https://upload.wikimedia.org/wikipedia/en/c/c2/Back_to_the_Future_Part_II.jpg">
+        <h3>Back to the Future Part II</h3>
+        <p>Marty McFly has only just gotten back from the past, when he is once again picked up by Dr. Emmett Brown and sent
+        through time to the future. Marty's job in the future is to pose as his own son to prevent him from being thrown in
+        prison. Unfortunately, things get worse when the future changes the present.</p>
+      </div>
+      <div class="column">
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/4e/Back_to_the_Future_Part_III.jpg">
+        <h3>Back to the Future Part III</h3>
+        <p>Stranded in 1955, Marty McFly receives written word from his friend, Doctor Emmett Brown, as to where can be found the
+        DeLorean time machine. However, an unfortunate discovery prompts Marty to go to his friend's aid. Using the time
+        machine, Marty travels to the old west where his friend has run afoul of a gang of thugs and has fallen in love with a
+        local schoolteacher. Using the technology from the time, Marty and Emmett devise one last chance to send the two of them
+        back to the future.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
